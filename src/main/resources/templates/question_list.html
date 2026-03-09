@@ -1,11 +1,12 @@
-<link rel="stylesheet" type="text/css" th:href="@{/bootstrap.min.css}">
-<div class="container my-3">
+<html layout:decorate="~{layout}" xmlns:layout="http://www.w3.org/1999/xhtml">
+<div layout:fragment="content" class="container my-3">
     <table class="table">
         <thead class="table-dark">
         <tr>
             <th>번호</th>
             <th>제목</th>
             <th>작성일시</th>
+            ㅈ
         </tr>
         </thead>
         <tbody>
@@ -18,4 +19,7 @@
         </tr>
         </tbody>
     </table>
+    <a th:href="@{/question/create}" class="btn btn-primary">질문 등록하기</a>
 </div>
+
+</html>
